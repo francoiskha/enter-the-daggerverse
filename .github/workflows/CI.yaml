@@ -19,7 +19,7 @@ jobs:
         uses: dagger/dagger-for-github@v6
         with:
           version: "latest"
-          verb: call
+          verb: publish
           module: github.com/shykes/daggerverse/hello@v0.1.2
-          args: publish --source=.
+          args: --source=.
           cloud-token: ${{ secrets.DAGGER_CLOUD_TOKEN }}
